@@ -19,14 +19,14 @@
 <body>
 
     <div class="container mt-3">
-        <nav class="navbar navbar-expand-lg barra" >
+        <nav class="navbar navbar-expand-lg barra" aria-label="Navegación principal">
             <div class="container-fluid">
                 <a class="navbar-brand marca" href="#inicio"><i class="fa-solid fa-mountain"></i> Cumbres de México</a>
-                <button class="navbar-toggler" type="button">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
                     <p class="navbar-toggler-icon"></p>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
-                    <div class="navbar-nav ms-auto d-flex flex-column">
+                    <div class="navbar-nav ms-auto d-flex flex-column flex-lg-row align-items-lg-center gap-2 py-2 py-lg-0">
                         <a class="enlace" href="#inicio">Inicio</a>
                         <a class="enlace" href="#beneficios">Beneficios</a>
                         <a class="enlace" href="#tipos">Escalada</a>
@@ -37,6 +37,30 @@
                 </div>
             </div>
         </nav>
+    </div>
+
+<div class="container ">
+
+        <div id="inicio" class="tarjeta ">
+            <div class="row align-items-center ">
+
+                <div class="col-12  text-center ">
+                    <h1>Descubre las montañas de México</h1>
+                    <hr>
+                    <p class="fs-5">Una guía sencilla para empezar a escalar, sin importar si nunca lo has hecho o si ya buscas una cumbre difícil.</p>
+                    <div class="d-flex flex-wrap justify-content-cente  gap-2">
+                        <a href="#tipos" class="boton">Empezar <i class="fa-solid fa-arrow-down"></i></a>
+                        <a href="#contacto" class="boton boton-claro">Contáctanos</a>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Aqui va a ir una imagen -->
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
 </body>
