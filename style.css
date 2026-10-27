@@ -1,0 +1,10 @@
+html {
+    background-color: aquamarine;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #1b1b1b;
+    background-color: transparent;
+}
