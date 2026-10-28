@@ -208,5 +208,92 @@
                 </div>
             </div>
         </div>
+
+
+        <div id="seguridad" class="tarjeta p-4 mb-4 text-center">
+            <h2>⚠️ Escalada responsable</h2>
+            <hr>
+            <p class="mb-0">Elige rutas de acuerdo con tu experiencia, revisa tu equipo, aprende acompañado de personas con experiencia, respeta tus límites y cuida la montaña: no dejes basura ni dañes el entorno.</p>
+        </div>
+
+
+        <div id="contacto" class="tarjeta p-4 mb-4">
+            <h2 class="text-center">Planea tu escalada</h2>
+            <hr>
+            <p class="text-center">Cuéntanos tu nivel y qué te interesa.</p>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+
+                    <div id="mensajeForm" class="alert d-none" role="alert"></div>
+
+                    <form id="formulario" novalidate>
+                        <div class="row g-3">
+
+                            <div class="col-12 col-md-6">
+                                <label for="nombre" class="form-label">Nombre *</label>
+                                <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required minlength="3">
+                                <div class="invalid-feedback">Escribe tu nombre (mínimo 3 letras).</div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="correo" class="form-label">Correo *</label>
+                                <input type="email" id="correo" class="form-control" placeholder="correo@ejemplo.com" required>
+                                <div class="invalid-feedback">Escribe un correo válido.</div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="nivel" class="form-label">Tu nivel *</label>
+                                <select id="nivel" class="form-select" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="Principiante">Principiante</option>
+                                    <option value="Intermedio">Intermedio</option>
+                                    <option value="Avanzado">Avanzado</option>
+                                </select>
+                                <div class="invalid-feedback">Selecciona tu nivel.</div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <span class="form-label d-block">Tipo que te interesa *</span>
+                                <div class="d-flex flex-wrap gap-3 pt-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="tipo" id="tipo1" value="Boulder" required>
+                                        <label class="form-check-label" for="tipo1">Boulder</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="tipo" id="tipo2" value="Deportiva">
+                                        <label class="form-check-label" for="tipo2">Deportiva</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="tipo" id="tipo3" value="Alpina">
+                                        <label class="form-check-label" for="tipo3">Alpina</label>
+                                    </div>
+                                </div>
+                                <div class="text-danger small d-none" id="errorTipo">Elige un tipo.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label">Mensaje *</label>
+                                <textarea id="mensaje" class="form-control" rows="3" placeholder="¿Qué quieres lograr?" required minlength="10"></textarea>
+                                <div class="invalid-feedback">Escribe al menos 10 caracteres.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="acepto" required>
+                                    <label class="form-check-label" for="acepto">Entiendo que escalar implica riesgos. *</label>
+                                    <div class="invalid-feedback">Debes aceptar para continuar.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 text-center">
+                                <button type="submit" class="boton border-0"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
