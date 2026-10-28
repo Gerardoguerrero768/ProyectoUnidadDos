@@ -8,3 +8,125 @@ body {
     color: #1b1b1b;
     background-color: transparent;
 }
+
+h1, h2, h3, h4, h5, .marca {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: calc(1.8rem + 1.5vw);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta {
+    background: azure;
+    border-bottom: 4px solid grey;
+    border-left: 4px solid grey;
+    border-radius: 1rem;
+}
+
+
+.mini {
+    background: azure;
+    border: 4px solid rgb(139, 190, 18);
+    border-radius: 1rem;
+}
+
+hr {
+    border: none;
+    height: 0.2rem;
+    opacity: 1;
+    background: linear-gradient(to right, transparent, aquamarine, transparent);
+}
+
+.barra {
+    background: azure;
+    border-bottom: 4px solid grey;
+    border-left: 4px solid grey;
+    border-radius: 1rem;
+}
+
+.marca {
+    font-weight: 700;
+    color: #1b1b1b;
+}
+
+.enlace {
+    color: black;
+    text-decoration: none;
+    background-color: rgb(139, 190, 18);
+    border-radius: 3rem;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.enlace:hover {
+    background-color: rgb(116, 160, 10);
+    transform: scale(1.05);
+}
+
+.boton {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(139, 190, 18);
+    border-radius: 3rem;
+    padding: 0.6rem 1.5rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: rgb(116, 160, 10);
+    transform: scale(1.05);
+    color: black;
+}
+
+.boton-claro {
+    background-color: azure;
+    border: 3px solid rgb(139, 190, 18);
+}
+
+
+.icono {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: rgb(139, 190, 18);
+    font-size: 1.5rem;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: rgb(139, 190, 18);
+    border-radius: 3rem;
+    padding: 0.2rem 0.9rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.lista-equipo i {
+    color: rgb(90, 130, 10);
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    border-color: rgb(139, 190, 18);
+    box-shadow: 0 0 0 0.25rem rgba(139, 190, 18, 0.35);
+}
+
+.form-check-input:checked {
+    background-color: rgb(90, 130, 10);
+    border-color: rgb(90, 130, 10);
+}
