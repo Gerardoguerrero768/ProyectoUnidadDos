@@ -162,3 +162,9 @@ hr {
     object-fit: cover;
     border-radius: 0.75rem;
 }
+
+.icono img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
